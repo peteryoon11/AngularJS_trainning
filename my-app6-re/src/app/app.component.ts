@@ -4,10 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
-  ,inputs:[]
-  ,providers:[]
 })
 export class AppComponent {
   title = 'app';
-  
 }

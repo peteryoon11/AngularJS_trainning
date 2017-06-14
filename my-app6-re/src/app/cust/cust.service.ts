@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
 
 @Injectable()
-export class HelloService {
+export class CustService {
 
   constructor() { }
-  sayHello()
-  {
-    return "hello";
+  getCurrentTime(){
+
+    return new Date();
+    
   }
 }

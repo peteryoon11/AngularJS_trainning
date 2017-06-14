@@ -1,21 +1,16 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
-import { FirstComponent } from './first/first.component';
-import { SecondComponent } from './second/second.component';
-import {CurrentTimeService} from './current-time.service';
-
+import {CustModule} from './cust/cust.module';
 @NgModule({
   declarations: [
-    AppComponent,
-    FirstComponent,
-    SecondComponent
+    AppComponent
   ],
   imports: [
     BrowserModule
+    ,CustModule
   ],
-  providers: [CurrentTimeService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
