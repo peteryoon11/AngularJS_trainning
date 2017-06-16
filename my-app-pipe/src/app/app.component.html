@@ -1,0 +1,66 @@
+<!--The whole content below can be removed with the new code.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{title}}!!
+  </h1>
+  <img width="300" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyNTAgMjUwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNTAgMjUwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDojREQwMDMxO30NCgkuc3Qxe2ZpbGw6I0MzMDAyRjt9DQoJLnN0MntmaWxsOiNGRkZGRkY7fQ0KPC9zdHlsZT4NCjxnPg0KCTxwb2x5Z29uIGNsYXNzPSJzdDAiIHBvaW50cz0iMTI1LDMwIDEyNSwzMCAxMjUsMzAgMzEuOSw2My4yIDQ2LjEsMTg2LjMgMTI1LDIzMCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAJIi8+DQoJPHBvbHlnb24gY2xhc3M9InN0MSIgcG9pbnRzPSIxMjUsMzAgMTI1LDUyLjIgMTI1LDUyLjEgMTI1LDE1My40IDEyNSwxNTMuNCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAxMjUsMzAgCSIvPg0KCTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xMjUsNTIuMUw2Ni44LDE4Mi42aDBoMjEuN2gwbDExLjctMjkuMmg0OS40bDExLjcsMjkuMmgwaDIxLjdoMEwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMQ0KCQlMMTI1LDUyLjF6IE0xNDIsMTM1LjRIMTA4bDE3LTQwLjlMMTQyLDEzNS40eiIvPg0KPC9nPg0KPC9zdmc+DQo=" />
+</div>
+<h2>날짜 정보</h2>
+number : {{currentDate}}<br>
+Date : {{currentDate2}}<br>
+string : {{currentDate3}}
+<div>
+<h2>날짜 정보 pipe 적용</h2>
+number : {{currentDate|date}}<br>
+number : {{currentDate|date:'y년 m월 d일'}}<br>
+number : {{currentDate|date:'y년 MM월 dd일 '}}<br>
+number : {{currentDate|date:'y년 MM월 dd일 h시 m분 s초'}}<br>
+Date : {{currentDate2}}<br>
+string : {{currentDate3}}
+</div>
+<div>
+  <h2>통화 포맷 지정</h2>
+  <p> 01 {{1000.125|currency}}</p>
+  <p> 02 {{1000.125|currency:'USD':true}}</p>
+  <p> 03 {{1000.125|currency:'USD':4.1-2}}</p>
+  <p> 04 {{1000.125|currency:'KRW':true}}</p>
+  <p> 05 {{1000.125|currency:'KRW':4.1-2}}</p>
+  <p> 06 {{1000.125|currency}}</p>
+</div>
+<div>
+  <h2>percent 포맷 지정</h2>
+  <p> 01 {{1000.125|percent}}</p>
+  <p> 02 {{1000.125|currency:'USD':true}}</p>
+  <p> 03 {{1000.125|currency:'USD':4.1-2}}</p>
+  <p> 04 {{1000.125|currency:'KRW':true}}</p>
+  <p> 05 {{1000.125|currency:'KRW':4.1-2}}</p>
+  <p> 06 {{1000.125|currency}}</p>
+</div>
+<div>
+  <h2>문자열 포맷 지정</h2>
+  <p> 01 {{"abcdefghijklmnop"|lowercase}}</p>
+
+  <p> 02 {{"abcdefghijklmnop"|lowercase}}</p>
+
+  <p> 03 {{"abcdefghijklmnop"|lowercase}}</p>
+
+
+</div>
+
+<div>
+  <h2>JSON 객체 </h2>
+<p>{{person}}</p>
+<p>{{StrinhJSOn}}</p>
+<p>{{person|json}}</p>
+<p>{{jsonObjecy}}</p>
+
+
+
+</div>
+
+<div>
+<h3>나만의 파이프 만들기</h3>
+<p>{{str}}</p>
+<p>{{str|myDate:'/':"hello"}}</p>
+<p>{{str|myDate:'-'}}</p>
+</div>
